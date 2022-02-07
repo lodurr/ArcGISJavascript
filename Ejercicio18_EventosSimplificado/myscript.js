@@ -1,24 +1,17 @@
 //Funcion para el boton
-document.getElementById("myBtn").addEventListener("click", guardar);
-
 function guardar() {
     alert("Desea Guardar?")
 }
 //Funcion para el texto Nombre
-document.getElementById("textNombre").addEventListener("mouseover", nombreMouseOver);
 function nombreMouseOver() {
     document.getElementById("textNombre").style.backgroundColor = "yellow";
 }
-
-document.getElementById("textNombre").addEventListener("mouseleave", nombreMouseLeave);
 
 function nombreMouseLeave() {
     document.getElementById("textNombre").style.backgroundColor = "red";
 }
 
 //Funcion para el texto Letra vocal o consonante
-document.getElementById("textLetra").addEventListener("keyup", checkLetter);
-
 var lt;
 function checkLetter() {
     lt = document.getElementById("textLetra").value;
